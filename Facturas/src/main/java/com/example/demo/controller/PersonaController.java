@@ -1,5 +1,5 @@
-package com.facturas.demo.controller;
+package com.example.demo.controller;
 
-public class PersonasController {
+public class PersonaController {
 
 }
