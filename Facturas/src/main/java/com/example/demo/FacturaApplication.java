@@ -1,13 +1,13 @@
-package com.facturas.demo;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FacturasApplication {
+public class FacturaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FacturasApplication.class, args);
+		SpringApplication.run(FacturaApplication.class, args);
 	}
 
 }
