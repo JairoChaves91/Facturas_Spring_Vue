@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-import java.sql.Date;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -27,7 +27,7 @@ public class Factura {
 	@Column (name = "conceptoFactura", length=50)
 	private String conceptoFactura;
 	@Column (name = "fechaFactura", length=15)
-	private Date fechaFactura;
+	private String fechaFactura;
 	
 	public int getIdFactura() {
 		return idFactura;
@@ -59,10 +59,10 @@ public class Factura {
 	public void setConceptoFactura(String conceptoFactura) {
 		this.conceptoFactura = conceptoFactura;
 	}
-	public Date getFechaFactura() {
+	public String getFechaFactura() {
 		return fechaFactura;
 	}
-	public void setFechaFactura(Date fechaFactura) {
+	public void setFechaFactura(String fechaFactura) {
 		this.fechaFactura = fechaFactura;
 	}
 
