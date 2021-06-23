@@ -18,14 +18,14 @@ private IFacturasRepo repo;
 @GetMapping("/facturas")
 public String facturas(@RequestParam(name="conceptoFactura", required=false, defaultValue = "world") String name, Model model) {
 	Factura p = new Factura();
-	p.setIdFactura(1);
-	p.setConceptoFactura("Que te importa 1");
-	p.setCifUsuario("B1234567");
-	p.setImporteFactura(987);
-	p.setFechaFactura("23602021");
-	p.setNumFactura(0001);
+	p.setIdFactura(10);
+	p.setConceptoFactura("Que te importa 1000");
+	p.setCifUsuario("B7654321");
+	p.setImporteFactura(10598);
+	p.setNumFactura(20000);
 	repo.save(p);
 	model.addAttribute("conceptoFactura", name);
+	
 	return "facturas";
 	}
 	

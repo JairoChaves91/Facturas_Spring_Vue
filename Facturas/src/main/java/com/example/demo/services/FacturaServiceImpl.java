@@ -19,7 +19,7 @@ public abstract class FacturaServiceImpl implements IFacturaService {
 		facturaSalida.setIdFactura(facturaEntrada.getIdFactura());
 		facturaSalida.setImporteFactura(facturaEntrada.getImporteFactura());
 		facturaSalida.setNumFactura(facturaEntrada.getNumFactura());
-		facturaSalida.setFechaFactura(facturaEntrada.getFechaFactura());
+
 		repo.save(facturaSalida);
 		return facturaSalida;
 		

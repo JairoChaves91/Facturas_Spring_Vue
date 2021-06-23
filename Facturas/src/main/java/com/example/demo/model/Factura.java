@@ -26,9 +26,7 @@ public class Factura {
 	private int importeFactura;
 	@Column (name = "conceptoFactura", length=50)
 	private String conceptoFactura;
-	@Column (name = "fechaFactura", length=15)
-	private String fechaFactura;
-	
+
 	public int getIdFactura() {
 		return idFactura;
 	}
@@ -59,11 +57,6 @@ public class Factura {
 	public void setConceptoFactura(String conceptoFactura) {
 		this.conceptoFactura = conceptoFactura;
 	}
-	public String getFechaFactura() {
-		return fechaFactura;
-	}
-	public void setFechaFactura(String fechaFactura) {
-		this.fechaFactura = fechaFactura;
-	}
+
 
 }
